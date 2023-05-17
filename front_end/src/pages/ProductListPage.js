@@ -13,17 +13,20 @@ const ProductListPage = () => {
       <Row>
         <Col md={3}>
           <ListGroup variant='flush'>
-            <ListGroup.Item><SortOptionsComponent /></ListGroup.Item>
-            <ListGroup.Item><PriceFilterComponent /></ListGroup.Item>
+            <ListGroup.Item className='mb-3 mt-3'><SortOptionsComponent /></ListGroup.Item>
+            <ListGroup.Item>Filter: <br /><PriceFilterComponent /></ListGroup.Item>
             <ListGroup.Item><RatingFilterComponent /></ListGroup.Item>
             <ListGroup.Item><CategoryFilterComponent /></ListGroup.Item>
             <ListGroup.Item><AttributesFilterComponent /></ListGroup.Item>
-            <ListGroupItem><Button variant='primary'>Primary</Button></ListGroupItem>
-            <ListGroupItem><Button variant='danger'>Danger</Button></ListGroupItem>
+            <ListGroupItem><Button variant='primary'>Filter</Button></ListGroupItem>
+            <ListGroupItem><Button variant='danger'>Reset Filter</Button></ListGroupItem>
           </ListGroup>
         </Col>
         <Col md={9}>
-          <ProductForListComponent />
+          {Array.from({ length: 5 }).map((_, idx) => (
+            <ProductForListComponent key={idx}
+              images={['games', 'monitors', 'tablets', 'games', 'monitors']} idx={idx} />
+          ))}
           <PaginationComponent />
         </Col>
       </Row>
