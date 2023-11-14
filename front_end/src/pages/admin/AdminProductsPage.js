@@ -39,7 +39,7 @@ const AdminProductsPage = () => {
                 <td>{item.price}</td>
                 <td>{item.category}</td>
                 <td>
-                  <LinkContainer to='admin/edit-product'>
+                  <LinkContainer to='/admin/edit-product'>
                     <Button className="btn-sm">
                       <i className='bi bi-pencil-square'></i>
                     </Button>
