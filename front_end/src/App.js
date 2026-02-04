@@ -26,7 +26,7 @@ import AdminOrderDetailsPage from "./pages/admin/AdminOrderDetails";
 import AdminOrdersPage from "./pages/admin/AdminOrdersPage";
 import AdminProductsPage from "./pages/admin/AdminProductsPage";
 import AdminUserPage from "./pages/admin/AdminUserPage";
-// untils
+// utils
 import ScrollToTop from "./utils/ScrollToTop";
 
 function App() {
@@ -62,7 +62,7 @@ function App() {
           <Route path="/admin/chats" element={<AdminChatPage />} />
         </Route>
       </Routes>
-      {/* <FooterComponent /> */}
+      <FooterComponent />
     </BrowserRouter>
   );
 }

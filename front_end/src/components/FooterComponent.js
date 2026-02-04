@@ -6,7 +6,7 @@ const FooterComponent = () => {
       <Container fluid>
         <Row className='mt-5'>
           <Col className='bg-dark text-white text-center py-5'>
-            Copyright &copy; The Los Shop
+            Copyright &copy; The Los Shop 2025
           </Col>
         </Row>
       </Container>
